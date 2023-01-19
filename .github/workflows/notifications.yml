@@ -39,6 +39,7 @@ jobs:
           message: |
             ${{ github.actor }} создал новый Pull Request 🛠:
             📘 Название: ${{github.event.pull_request.title}}
+            if: ${{github.event.pull_request.body !==''}}
             ✏️ Описание: ${{ github.event.pull_request.body }}
             
             
